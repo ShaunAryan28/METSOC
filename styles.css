@@ -172,8 +172,6 @@ footer {
 
 
 /* Media Query for Responsive Design */
-
-
 footer:hover {
     opacity: 10rem;
     transform: translateY(0);
@@ -218,6 +216,7 @@ footer:hover {
     }
     .image-section{
         margin-top: 10%;
+        width: 100%;
     }
     .main-content{
         margin-bottom: 10%;
@@ -233,13 +232,16 @@ footer:hover {
     }
     .musicol{
         height: 90%;
+        
     }
     .image-section{
         margin-top: 10%;
+        width: 100%;
     }
     .main-content{
         margin-bottom: 10%;
     }
+
 }
 .musicol{
     height: 100% !important;    
