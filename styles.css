@@ -213,6 +213,15 @@ footer:hover {
     html{
         font-size: 45%;
     }
+    .musicol{
+        height: 90% ;   
+    }
+    .image-section{
+        margin-top: 90%;
+    }
+    .main-content{
+        margin-bottom: 90%;
+    }
 }
 
 
@@ -222,10 +231,19 @@ footer:hover {
     html{
         font-size: 55%;
     }
+    .musicol{
+        height: 90%;
+    }
+    .image-section{
+        margin-top: 70%;
+    }
+    .main-content{
+        margin-bottom: 70%;
+    }
 }
 .musicol{
-    height: 100% !important;    
-    width: 60% !important;
+    height: 4rem !important;    
+    width: 7rem !important;
 }
 
 .slider {
@@ -301,7 +319,8 @@ footer:hover {
     flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
     overflow-x: auto; /* Enable horizontal scrolling if the images don't fit the screen width */
     /* width: 100%; */
-}
+    }
+
 
 .image-section img {
     margin-top: 0;
