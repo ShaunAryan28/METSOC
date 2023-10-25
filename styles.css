@@ -1,0 +1,250 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+   background-color:#333 !important;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #ED1D24;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ED1D24; /* Darker background color for the navigation bar */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+nav a:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    background-color: #333; /* Light gray background */
+    padding: 20px;
+}
+
+.avenger-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 15px; /* Increased padding for Avenger cards */
+    border-radius: 10px; /* Rounded corners for Avenger cards */
+    background-color: #ED1D24; /* White background for Avenger cards */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow for Avenger cards */
+}
+
+.avenger-card img {
+    max-width: 100%;
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners for Avenger images */
+}
+
+/* Comics and Movies Sections */
+.comics, .movies {
+    background-color: #ED1D24; /* Dark background for Comics and Movies sections */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comics p, .movies p {
+    font-size: 1.2em;
+    
+}
+
+/* About Section Styles */
+.about {
+    background-color: #333;
+    padding: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for the image in the About section */
+}
+
+/* Footer Styles */
+
+header, nav, section, article, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px ;
+    background-color: #333;
+}
+
+.movie-poster {
+    text-align: center;
+    margin: 20px;
+    background-color: #333;
+}
+footer {
+    background-color: #ED1D24;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.movie-poster img {
+    max-width: 100%;
+    height: auto;
+  
+}
+/* Navigation Styles */
+
+/* nav a:hover {
+    color: #f00; /* Change color on hover 
+    transition: color 0.3s ease-in-out;  Smooth color transition  */
+
+
+/* Main Content Styles */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    background-color: #333;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #333;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer:hover {
+    opacity: 100;
+    transform: translateY(0);
+    
+}
+.featured .avenger-card {
+    opacity: 100;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.featured .avenger-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.featured .avenger-card:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.featured .avenger-card:nth-child(3) {
+    transition-delay: 0.1s;
+}
+
+.featured .avenger-card:hover {
+    transform: scale(1.2) translateY(0); /* Scale and move the card on hover */
+    opacity: 1;
+}
+.avenger-card:hover {
+    transform: scale(1.1); /* Scale the card on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+
+}
+
+
+
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    /* ... Previous Media Query styles ... */
+    
+    /* Adjustments for the new sections */
+    .comics, .movies {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .slider img:first-child {
+    z-index: 1;
+  }
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #717171;}
+  .d-block {
+    width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 405px;
+  
+  background-position: center;
+  }
