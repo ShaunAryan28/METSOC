@@ -17,11 +17,15 @@ header {
 nav ul {
     list-style: none;
     display: flex;
+    height: 50px;
     justify-content: space-around;
     background-color: #ED1D24; /* Darker background color for the navigation bar */
     padding: 10px;
     border-radius: 10px;
+    font-size: large;
 }
+
+
 
 nav a {
     text-decoration: none;
@@ -51,6 +55,7 @@ nav a:hover {
     flex-direction: column;
     background-color: #333; /* Light gray background */
     padding: 20px;
+    align-items: center;
 }
 
 .avenger-card {
@@ -62,6 +67,10 @@ nav a:hover {
     border-radius: 10px; /* Rounded corners for Avenger cards */
     background-color: #ED1D24; /* White background for Avenger cards */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow for Avenger cards */
+}
+.avenger-card:hover{
+    background-color: darkred;
+    cursor: pointer;
 }
 
 .avenger-card img {
@@ -83,6 +92,11 @@ nav a:hover {
 .comics p, .movies p {
     font-size: 1.2em;
     
+}
+
+.comics:hover{
+    cursor: pointer;
+    background-color: darkred;
 }
 
 /* About Section Styles */
@@ -111,11 +125,12 @@ header, nav, section, article, footer {
     background-color: #333;
 }
 footer {
-    background-color: #ED1D24;
+   
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 10px;
-    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -163,6 +178,7 @@ footer:hover {
     opacity: 100;
     transform: translateY(20px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 }
 
 .featured .avenger-card:nth-child(1) {
@@ -248,3 +264,23 @@ footer:hover {
   
   background-position: center;
   }
+  /* Position the image buttons at the bottom right */
+.image-buttons {
+    position: relative; /* Relative positioning to scroll with content */
+    margin-top: 0px; /* Adjust top margin as needed */
+    margin-right: 30px;
+    padding-left: 90px;
+    
+    text-align: right; /* Align buttons to the right */
+}
+
+.image-buttons a {
+    display: inline-block; /* Display buttons in a line */
+    margin-left: 10px; /* Add space between buttons */
+}
+
+
+.image-buttons img{
+    height: 50px;
+    width: 50px;
+}
