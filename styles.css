@@ -4,7 +4,7 @@ body {
    background-color:#333 !important;
 }
 html{
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 /* Header Styles */
@@ -14,6 +14,7 @@ header {
     color: #fff;
     padding: 2rem;
     border-radius: 1rem;
+    
 }
 
 /* Navigation Styles */
@@ -46,7 +47,7 @@ nav a:hover {
 /* Main Content Styles */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1rem 200rem;
     grid-gap: 2rem;
     color: #fff;
     background-color: #333;
@@ -57,7 +58,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     background-color: #333; /* Light gray background */
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -66,10 +67,11 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 1.5rem; /* Increased padding for Avenger cards */
+    padding: 0.5rem; /* Increased padding for Avenger cards */
+   
     border-radius: 1rem; /* Rounded corners for Avenger cards */
     background-color: #ED1D24; /* White background for Avenger cards */
-    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.2); /* Subtle box shadow for Avenger cards */
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.02rem); /* Subtle box shadow for Avenger cards */
 }
 .avenger-card:hover{
     background-color: darkred;
@@ -77,9 +79,9 @@ nav a:hover {
 }
 
 .avenger-card img {
-    max-width: 62.5rem;
+    max-width: 100%;
     background-color: #333;
-    border: 0.1rem solid #ccc;
+    /* border: 0.1rem solid #ccc; */
     border-radius: 1rem; /* Rounded corners for Avenger images */
 }
 
@@ -109,7 +111,7 @@ nav a:hover {
 }
 
 .about img {
-    max-width: 62.5%;
+    max-width: 100%;
     border-radius: 1rem; /* Rounded corners for the image in the About section */
 }
 
@@ -138,18 +140,11 @@ footer {
 
 
 .movie-poster img {
-    max-width: 62.5%;
+    max-width: 100%;
     height: auto;
   
 }
-/* Navigation Styles */
 
-/* nav a:hover {
-    color: #f00; /* Change color on hover 
-    transition: color 0.3s ease-in-out;  Smooth color transition  */
-
-
-/* Main Content Styles */
 .main-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -165,8 +160,9 @@ footer {
 }
 
 
+
 /* Media Query for Responsive Design */
-@media (max-width: 998px) {
+@media (max-width: 998) {
     html{
         font-size: 55%;
     }
@@ -220,13 +216,13 @@ footer:hover {
 
 
 .slider {
-    width: 62.5%;
+    width: 100%;
     height: 51rem;
     position: relative;
   }
   
   .slider img {
-    width: 62.5%;
+    width: 100%;
     height: 50rem;
     position: absolute;
     top: 0;
@@ -259,7 +255,7 @@ footer:hover {
   .dot:hover {
     background-color: #717171;}
   .d-block {
-    width: 62.5%;
+    width: 100%;
   background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
   height: 40.5rem;
   
