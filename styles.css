@@ -224,8 +224,8 @@ footer:hover {
     }
 }
 .musicol{
-    height: 25rem !important;    
-    width: 45rem !important;
+    height: 100% !important;    
+    width: 60% !important;
 }
 
 .slider {
@@ -270,7 +270,7 @@ footer:hover {
   .d-block {
     width: 100%;
   background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
-  height: 40.5rem;
+  height: 40rem;
   
   background-position: center;
   }
@@ -278,8 +278,8 @@ footer:hover {
 .image-buttons {
     position: relative; /* Relative positioning to scroll with content */
     margin-top: 0rem; /* Adjust top margin as needed */
-    margin-right: 3rem;
-    padding-left: 9rem;
+    margin-right: 3%;
+    padding-left: 70%;
     
     text-align: right; /* Align buttons to the right */
 }
@@ -291,8 +291,8 @@ footer:hover {
 
 
 .image-buttons img{
-    height: 5rem;
-    width: 5rem;
+    height: 50%;
+    width: 50%;
 }
 /* Style the image section to display images side by side */
 .image-section {
@@ -305,13 +305,13 @@ footer:hover {
 
 .image-section img {
     margin-top: 0;
-    margin-right: 1rem;
+    margin-right: 2%;
     flex: auto; /* Don't allow images to grow or shrink */
     max-width: 100%; /* Ensure images don't exceed their original width */
     height: auto; /* Maintain the image's aspect ratio */
     border-radius: 1rem;
 }
 .image-section img:hover{
-    transform: rotate(15deg);
-    transform: skewX(-10deg)
+    /* transform: rotate(15deg); */
+    transform: skewX(-8deg)
 }
