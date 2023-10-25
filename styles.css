@@ -26,7 +26,7 @@ nav ul {
     background-color: #ED1D24; /* Darker background color for the navigation bar */
     padding: 1rem;
     border-radius: 1rem;
-    font-size: large;
+    font-size: 2drem;
 }
 
 
@@ -52,13 +52,15 @@ nav a:hover {
     color: #fff;
     background-color: #333;
     border-radius: 1rem;
+    margin-bottom: 0;
 }
 
 .featured {
     display: flex;
     flex-direction: column;
     background-color: #333; /* Light gray background */
-    padding: 1rem;
+    padding: 0rem;
+    margin-bottom: 0%;
     align-items: center;
 }
 
@@ -67,8 +69,8 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 0.5rem; /* Increased padding for Avenger cards */
-   
+    padding: 0rem; /* Increased padding for Avenger cards */
+    margin-bottom: 0%;
     border-radius: 1rem; /* Rounded corners for Avenger cards */
     background-color: #ED1D24; /* White background for Avenger cards */
     box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.02rem); /* Subtle box shadow for Avenger cards */
@@ -80,6 +82,7 @@ nav a:hover {
 
 .avenger-card img {
     max-width: 100%;
+    
     background-color: #333;
     /* border: 0.1rem solid #ccc; */
     border-radius: 1rem; /* Rounded corners for Avenger images */
@@ -95,7 +98,7 @@ nav a:hover {
 }
 
 .comics p, .movies p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     
 }
 
@@ -162,11 +165,7 @@ footer {
 
 
 /* Media Query for Responsive Design */
-@media (max-width: 998) {
-    html{
-        font-size: 55%;
-    }
-}
+
 
 footer:hover {
     opacity: 10rem;
@@ -203,17 +202,24 @@ footer:hover {
 }
 
 
-
+@media (max-width: 998px) {
+    html{
+        font-size: 45%;
+    }
+}
 
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
    
     html{
-        font-size: 45%;
+        font-size: 55%;
     }
 }
-
+.musicol{
+    height: 25rem !important;    
+    width: 45rem !important;
+}
 
 .slider {
     width: 100%;
@@ -228,7 +234,7 @@ footer:hover {
     top: 0;
     left: 0;
   }
-  
+
   .slider img:first-child {
     z-index: 1;
   }
@@ -280,4 +286,25 @@ footer:hover {
 .image-buttons img{
     height: 5rem;
     width: 5rem;
+}
+/* Style the image section to display images side by side */
+.image-section {
+    margin-top: 0%;
+    display: flex; /* Use flexbox to arrange images in a row */
+    flex-wrap: nowrap; /* Prevent images from wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if the images don't fit the screen width */
+    /* width: 100%; */
+}
+
+.image-section img {
+    margin-top: 0;
+    margin-right: 1rem;
+    flex: auto; /* Don't allow images to grow or shrink */
+    max-width: 100%; /* Ensure images don't exceed their original width */
+    height: auto; /* Maintain the image's aspect ratio */
+    border-radius: 1rem;
+}
+.image-section img:hover{
+    transform: rotate(15deg);
+    transform: skewX(-10deg)
 }
