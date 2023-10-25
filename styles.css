@@ -3,25 +3,28 @@ body {
     font-family: Arial, sans-serif;
    background-color:#333 !important;
 }
+html{
+    font-size: 62.5%;
+}
 
 /* Header Styles */
 header {
     text-align: center;
     background-color: #ED1D24;
     color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
-    height: 50px;
+    height: 5rem;
     justify-content: space-around;
     background-color: #ED1D24; /* Darker background color for the navigation bar */
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 1rem;
     font-size: large;
 }
 
@@ -31,7 +34,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: color 0.3s ease-in-out;
     
 }
@@ -44,17 +47,17 @@ nav a:hover {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+    grid-gap: 2rem;
     color: #fff;
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .featured {
     display: flex;
     flex-direction: column;
     background-color: #333; /* Light gray background */
-    padding: 20px;
+    padding: 2rem;
     align-items: center;
 }
 
@@ -62,11 +65,11 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    padding: 15px; /* Increased padding for Avenger cards */
-    border-radius: 10px; /* Rounded corners for Avenger cards */
+    margin: 1rem;
+    padding: 1.5rem; /* Increased padding for Avenger cards */
+    border-radius: 1rem; /* Rounded corners for Avenger cards */
     background-color: #ED1D24; /* White background for Avenger cards */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Subtle box shadow for Avenger cards */
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.2); /* Subtle box shadow for Avenger cards */
 }
 .avenger-card:hover{
     background-color: darkred;
@@ -74,10 +77,10 @@ nav a:hover {
 }
 
 .avenger-card img {
-    max-width: 100%;
+    max-width: 62.5rem;
     background-color: #333;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Rounded corners for Avenger images */
+    border: 0.1rem solid #ccc;
+    border-radius: 1rem; /* Rounded corners for Avenger images */
 }
 
 /* Comics and Movies Sections */
@@ -85,8 +88,8 @@ nav a:hover {
     background-color: #ED1D24; /* Dark background for Comics and Movies sections */
     color: #fff; /* White text color */
     text-align: center;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .comics p, .movies p {
@@ -102,40 +105,40 @@ nav a:hover {
 /* About Section Styles */
 .about {
     background-color: #333;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .about img {
-    max-width: 100%;
-    border-radius: 10px; /* Rounded corners for the image in the About section */
+    max-width: 62.5%;
+    border-radius: 1rem; /* Rounded corners for the image in the About section */
 }
 
 /* Footer Styles */
 
 header, nav, section, article, footer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px ;
+    margin: 2rem;
+    padding: 2rem;
+    border: .1rem ;
     background-color: #333;
 }
 
 .movie-poster {
     text-align: center;
-    margin: 20px;
+    margin: 2rem;
     background-color: #333;
 }
 footer {
    
     color: #fff;
     text-align: left;
-    padding: 10px;
-    margin-top: 0px;
+    padding: 1rem;
+    margin-top: 0rem;
     margin-bottom: 0;
 }
 
 
 .movie-poster img {
-    max-width: 100%;
+    max-width: 62.5%;
     height: auto;
   
 }
@@ -150,7 +153,7 @@ footer {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
+    grid-gap: 2rem;
     background-color: #333;
 }
 
@@ -163,20 +166,20 @@ footer {
 
 
 /* Media Query for Responsive Design */
-@media (max-width: 768px) {
-    .main-content {
-        grid-template-columns: 1fr;
+@media (max-width: 998px) {
+    html{
+        font-size: 55%;
     }
 }
 
 footer:hover {
-    opacity: 100;
+    opacity: 10rem;
     transform: translateY(0);
     
 }
 .featured .avenger-card {
-    opacity: 100;
-    transform: translateY(20px);
+    opacity: 10rem;
+    transform: translateY(2rem);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 }
@@ -209,24 +212,22 @@ footer:hover {
 
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
-    /* ... Previous Media Query styles ... */
-    
-    /* Adjustments for the new sections */
-    .comics, .movies {
-        grid-template-columns: 1fr;
+   
+    html{
+        font-size: 45%;
     }
 }
 
 
 .slider {
-    width: 100%;
-    height: 510px;
+    width: 62.5%;
+    height: 51rem;
     position: relative;
   }
   
   .slider img {
-    width: 100%;
-    height: 500px;
+    width: 62.5%;
+    height: 50rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -246,11 +247,11 @@ footer:hover {
   
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 2rem;
     background-color: #333;
-    border-radius: 50%;
+    border-radius: 31.25%;
     display: inline-block;
   }
   
@@ -258,29 +259,29 @@ footer:hover {
   .dot:hover {
     background-color: #717171;}
   .d-block {
-    width: 100%;
+    width: 62.5%;
   background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
-  height: 405px;
+  height: 40.5rem;
   
   background-position: center;
   }
   /* Position the image buttons at the bottom right */
 .image-buttons {
     position: relative; /* Relative positioning to scroll with content */
-    margin-top: 0px; /* Adjust top margin as needed */
-    margin-right: 30px;
-    padding-left: 90px;
+    margin-top: 0rem; /* Adjust top margin as needed */
+    margin-right: 3rem;
+    padding-left: 9rem;
     
     text-align: right; /* Align buttons to the right */
 }
 
 .image-buttons a {
     display: inline-block; /* Display buttons in a line */
-    margin-left: 10px; /* Add space between buttons */
+    margin-left: 1rem; /* Add space between buttons */
 }
 
 
 .image-buttons img{
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
 }
