@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStbQC0w82MOuEbWbKGYtTgfxiGeT-fZLgY-UuS1JJv5ujA6ACNVKB2xfIIDUfpDz0sfbo&usqp=CAU">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -11,21 +12,21 @@
 </head>
 <body>
     <header>
-        <h1>Marvel Avengers</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="height: 100px; width: 20%;">
     </header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Movies</a></li>
+            <li><a href="#" onclick="window.location.href='https://www.marvel.com/'">Home</a></li>
+            <li><a href="#" onclick="window.location.href='https://www.marvel.com/characters'">Characters</a></li>
+            <li><a href="#" onclick="window.location.href='https://www.marvel.com/games'">Games</a></li>
+            <li><a href="#" onclick="window.location.href='https://www.marvel.com/articles'">News</a></li>
         </ul>
     </nav>
-    <section class="movies">
+    <section class="movies" >
         <h2>Movies</h2>
         <p>Experience the Marvel Avengers on the big screen with action-packed movies that bring the heroes to life.</p>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
+        <div id="carouselExampleIndicators" class="carousel slide" >
+            <div class="carousel-indicators" >
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -65,15 +66,15 @@
     <section class="main-content">
         <article class="featured">
             <h2>Featured Avengers</h2>
-            <div class="avenger-card">
+            <div class="avenger-card" onclick="window.location.href='https://www.marvel.com/characters/iron-man-tony-stark'">
                 <img src="https://i.pinimg.com/originals/71/b2/2a/71b22a6563362653dbfb52dbb667ce42.jpg" alt="Iron Man">
                 <h3>Iron Man</h3>
             </div>
-            <div class="avenger-card">
+            <div class="avenger-card" onclick="window.location.href='https://www.marvel.com/characters/captain-america-steve-rogers'">
                 <img src="https://wallpapersmug.com/download/1920x1080/baa11d/soldier-captain-america-art.jpg" alt="Captain America">
                 <h3>Captain America</h3>
             </div>
-            <div class="avenger-card">
+            <div class="avenger-card" onclick="window.location.href='https://www.marvel.com/characters/thor-thor-odinson'">
                 <img src="https://images.alphacoders.com/102/1026220.jpg" alt="Thor">
                 <h3>Thor</h3>
             </div>
@@ -82,24 +83,34 @@
             <h2>About the Avengers</h2>
             <p>The Avengers are a team of superheroes from Marvel Comics, known for protecting the world from various threats. They were created by writer and editor Stan Lee and artist Jack Kirby, making their debut in "The Avengers" #1 in 1963.</p>
             <p>The team includes iconic characters such as Iron Man, Captain America, Thor, Hulk, Black Widow, and many others. Each Avenger has unique superpowers and abilities that they use to defend the Earth from supervillains, aliens, and other dangers.</p>
-            <p>The Avengers have appeared in numerous comic book series, animated TV shows, and blockbuster movies. Their popularity has made them a cultural phenomenon, and they have a dedicated fan base around the world.</p>
-            <section>
+            <p>The Avengers  have appeared in numerous comic book series, animated TV shows, and blockbuster movies. Their popularity has made them a cultural phenomenon, and they have a dedicated fan base around the world.</p>
+            <section class="music">
+                <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+                <div class="music" id="embed-iframe" >
 
-                
-                
 
+
+
+                </div>
+            
+        
             </section>
         </article>
         
     </section>
-    <section class="comics">
+    <section class="comics" onclick="window.location.href='https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12'">
         <h2>Comics</h2>
         <p>Explore a vast collection of Marvel Avengers comics that tell the epic stories of Earth's mightiest heroes.</p>
     </section>
     
- 
-    
+   
     <footer>
+        <div class="image-buttons">
+            <a href="https://github.com/ShaunAryan28"><img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/github-square-512.png" alt="Button 1"></a>
+            <a href="https://www.linkedin.com/in/shaun-aryan-sandipam-b243711b8/"><img src="https://cdn-icons-png.flaticon.com/512/38/38669.png" alt="Button 2" style="height: 45px; width: 45px;"></a>
+            <a href="https://www.instagram.com/shaunaryan_28/"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946461.png" alt="Button 3" style="height: 47px; width: 47px;"></a>
+        </div>
+        
         <p>&copy; 2023 Marvel Avengers</p>
     </footer>
 </body>
